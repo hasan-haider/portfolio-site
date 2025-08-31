@@ -1,61 +1,82 @@
 // Minimal JavaScript for AI Data Engineer Portfolio
 
-// Mobile navigation
+// Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger?.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu on link click
+// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger?.classList.remove('active');
-        navMenu?.classList.remove('active');
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
     });
 });
 
-// Smooth scrolling
+// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(anchor.getAttribute('href'));
-        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-});
-
-// Simple form submission
-const contactForm = document.querySelector('form');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const button = contactForm.querySelector('button');
-        const originalText = button.textContent;
-        
-        button.textContent = 'Sending...';
-        button.disabled = true;
-        
-        try {
-            const formData = new FormData(contactForm);
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
-            
-            if (response.ok) {
-                alert('Message sent successfully! I\'ll get back to you soon.');
-                contactForm.reset();
-            } else {
-                throw new Error('Failed to send message');
-            }
-        } catch (error) {
-            alert('Failed to send message. Please try again or email me directly.');
-        } finally {
-            button.textContent = originalText;
-            button.disabled = false;
         }
     });
-}
+});
+
+// Contact Form Handling
+const contactForm = document.querySelector('.contact-form form');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Change button text to show loading
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+    
+    try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (response.ok) {
+            alert('🎉 Message sent successfully! I\'ll get back to you soon!');
+            contactForm.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        // Funny popup for form submission failure
+        const funnyMessages = [
+            "🤖 Oops! My AI assistant seems to be having a coffee break. Please try again!",
+            "🦄 The unicorn delivering your message got lost in the cloud. Try again?",
+            "🐛 A bug ate your message! (Not really, but something went wrong. Try again!)",
+            "🚀 Your message tried to reach the moon but came back. Let's try again!",
+            "🎭 The form is being dramatic today. Please try again!",
+            "🍕 Your message got distracted by pizza. Try sending it again!",
+            "🌈 The rainbow bridge to my inbox is temporarily closed. Try again!",
+            "🎪 The circus is in town and your message joined the show. Try again!"
+        ];
+        
+        const randomMessage = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
+        alert(randomMessage);
+    } finally {
+        // Reset button
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    }
+});
