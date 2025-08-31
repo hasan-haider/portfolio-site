@@ -1,4 +1,4 @@
-# �� One-Click Deploy - Syed Hasan Naqvi's AI Data Engineer Portfolio
+# 🚀 One-Click Deploy - Syed Hasan Naqvi's Senior AI Data Engineer Portfolio
 
 ## Quick Start
 
@@ -24,33 +24,42 @@
 ## What's Included
 
 ✅ **Complete Personalization** - All content is already customized for Syed Hasan Naqvi  
-✅ **Industry Projects** - Real projects from Creditsafe, KipiAl, and TCS  
-✅ **AI/ML Skills** - Detailed technical expertise with progress bars  
+✅ **Leadership Experience** - Team Lead, International Client Management  
+✅ **Enterprise Projects** - Real projects from Creditsafe, KipiAl, and TCS  
+✅ **Comprehensive Tech Stack** - Current and past technologies with expertise levels  
 ✅ **Working Contact Form** - Ready to receive messages  
 ✅ **Mobile Responsive** - Works on all devices  
 ✅ **One-Click Deploy** - No manual content editing needed  
 
 ## Portfolio Content
 
-- **Hero Section** - Syed Hasan Naqvi, AI Data Engineer at Creditsafe
-- **About** - 4+ years experience, MSc from University of Glasgow
-- **Projects** - 4 industry projects with real technologies and achievements
-- **Skills** - 15+ technical skills organized by category
+- **Hero Section** - Senior AI Data Engineer & Team Lead at Creditsafe
+- **About** - 4+ years experience, leadership, international clients, MSc from University of Glasgow
+- **Projects** - 4 enterprise projects with leadership, international clients, and cutting-edge technologies
+- **Skills** - 20+ technical and leadership skills organized by category
 - **Contact** - LinkedIn and GitHub profiles
 
-## Technologies Featured
+## Current Tech Stack (Creditsafe)
 
-- **AI/ML**: Python, TensorFlow, Scikit-learn, GenAI, LangChain
-- **Big Data**: Apache Spark, Snowflake, AWS, Azure
-- **Tools**: dbt, Airflow, MLflow, Docker, Kubernetes
-- **Architecture**: Data Vault, Lakehouse, Microservices
+- **Cloud & DevOps:** AWS, Azure DevOps, Pipelines, Airflow, dbt
+- **Databases:** SQL, Oracle, Redshift, Snowflake
+- **Architecture:** Data Vault, Cursor AI, Documentation & Rules Creation
+- **Specialization:** Automation, ML, API Development
+
+## Past Experience Highlights
+
+- **Leadership:** Team management, international client delivery
+- **Technologies:** Snowflake, Oracle, ML, migrations, API development
+- **Projects:** 50+ international clients across Europe, Asia, and Americas
+- **Achievements:** Zero-downtime migrations, 99.9% data accuracy, 80% automation
 
 ## Ready to Deploy
 
 Everything is pre-configured with your real information:
 - ✅ Name: Syed Hasan Naqvi
-- ✅ Title: AI Data Engineer
+- ✅ Title: Senior AI Data Engineer & Team Lead
 - ✅ Company: Creditsafe
+- ✅ Leadership: Team Lead & International Client Expert
 - ✅ Education: MSc Computer Science, University of Glasgow
 - ✅ Location: United Kingdom
 - ✅ LinkedIn: linkedin.com/in/s-hasanhaider

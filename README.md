@@ -1,6 +1,6 @@
-# Syed Hasan Naqvi - AI Data Engineer Portfolio
+# Syed Hasan Naqvi - Senior AI Data Engineer & Team Lead
 
-A clean, professional portfolio showcasing expertise in AI Data Engineering, machine learning pipelines, and intelligent data systems.
+A professional portfolio showcasing expertise in leading data engineering teams, working with international clients, and building enterprise solutions using cutting-edge technologies.
 
 ## 🚀 Quick Deploy
 
@@ -10,23 +10,31 @@ A clean, professional portfolio showcasing expertise in AI Data Engineering, mac
 
 ## 👨‍💻 About
 
-**AI Data Engineer** with 4+ years of experience building end-to-end data pipelines and intelligent systems. Currently working at **Creditsafe**, previously at **KipiAl Data Analytics** and **Tata Consultancy Services**.
+**Senior AI Data Engineer & Team Lead** with 4+ years of experience leading cross-functional teams and delivering enterprise-grade data solutions for international clients. Currently spearheading data engineering initiatives at **Creditsafe**, previously led teams at **KipiAl Data Analytics** and delivered complex solutions at **Tata Consultancy Services**.
 
 **Education:** MSc Computer Science, University of Glasgow  
-**Location:** United Kingdom
+**Location:** United Kingdom  
+**Leadership:** Team Lead, International Client Management, Cross-functional Coordination
 
 ## 🛠️ Technical Expertise
 
-- **AI/ML:** Python, TensorFlow, Scikit-learn, GenAI, LangChain
-- **Big Data:** Apache Spark, Snowflake, AWS, Azure
-- **Tools:** dbt, Airflow, MLflow, Docker, Kubernetes
-- **Architecture:** Data Vault, Lakehouse, Microservices
+### Current Tech Stack (Creditsafe)
+- **Cloud & DevOps:** AWS, Azure DevOps, Pipelines, Airflow, dbt
+- **Databases:** SQL, Oracle, Redshift, Snowflake
+- **Architecture:** Data Vault, Cursor AI, Documentation & Rules Creation
+- **Specialization:** Automation, ML, API Development
+
+### Past Experience
+- **Leadership:** Team management, international client delivery
+- **Technologies:** Snowflake, Oracle, ML, migrations, API development
+- **Projects:** 50+ international clients across Europe, Asia, and Americas
+- **Achievements:** Zero-downtime migrations, 99.9% data accuracy, 80% automation
 
 ## 📱 Features
 
 - Clean, responsive design
-- Industry projects showcase
-- Technical skills with proficiency levels
+- Enterprise projects showcase
+- Leadership & technical skills
 - Working contact form
 - Mobile optimized
 
