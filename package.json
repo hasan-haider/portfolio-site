@@ -1,0 +1,21 @@
+{
+  "name": "ai-data-engineer-portfolio",
+  "version": "1.0.0",
+  "description": "Clean, fast AI Data Engineer portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "deploy": "./deploy.sh"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "data-engineer",
+    "machine-learning",
+    "python",
+    "spark"
+  ],
+  "author": "Syed Hasan Naqvi",
+  "license": "MIT",
+  "homepage": "https://hasan-haider.github.io/ai-data-engineer-portfolio"
+}
