@@ -40,24 +40,28 @@ const animateProgressBars = () => {
         const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
         
         if (isVisible && !bar.classList.contains('animated')) {
-            const targetWidth = bar.style.width || '0%';
-            bar.style.width = '0%';
+            // Get the target width from the inline style attribute
+            const targetWidth = bar.getAttribute('style')?.match(/width:\s*(\d+%)/)?.[1] || '0%';
             
+            // Animate to target width
             setTimeout(() => {
                 bar.style.width = targetWidth;
                 bar.classList.add('animated');
-            }, 100);
+            }, 200);
         }
     });
 };
 
-// Initialize progress bars with their target widths
+// Initialize progress bars
 const initializeProgressBars = () => {
     const progressBars = document.querySelectorAll('.skill-progress');
     progressBars.forEach(bar => {
-        const targetWidth = bar.style.width || '0%';
-        bar.style.width = targetWidth;
+        // Ensure all bars start at 0 width
+        bar.style.width = '0%';
     });
+    
+    // Trigger animation after a short delay
+    setTimeout(animateProgressBars, 500);
 };
 
 // Call on page load and scroll
