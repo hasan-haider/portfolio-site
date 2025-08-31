@@ -1,4 +1,4 @@
-# 🚀 One-Click Deploy - AI Data Engineer Portfolio
+# �� One-Click Deploy - Syed Hasan Naqvi's AI Data Engineer Portfolio
 
 ## Quick Start
 
@@ -18,32 +18,43 @@
 
 4. **Your portfolio will be live at:**
    ```
-   https://username.github.io/repo-name
+   https://hasan-haider.github.io/portfolio-site
    ```
 
 ## What's Included
 
-✅ **Clean, Fast Design** - Optimized for speed and performance  
-✅ **Industry Projects** - Focused on real enterprise work  
-✅ **AI/ML Skills** - Highlighting your technical expertise  
-✅ **Simple Contact Form** - Easy way to connect  
+✅ **Complete Personalization** - All content is already customized for Syed Hasan Naqvi  
+✅ **Industry Projects** - Real projects from Creditsafe, KipiAl, and TCS  
+✅ **AI/ML Skills** - Detailed technical expertise with progress bars  
+✅ **Working Contact Form** - Ready to receive messages  
 ✅ **Mobile Responsive** - Works on all devices  
-✅ **One-Click Deploy** - No complex setup required  
+✅ **One-Click Deploy** - No manual content editing needed  
 
-## Customization
+## Portfolio Content
 
-Edit these files to personalize:
-- `index.html` - Update your info and projects
-- `styles.css` - Modify colors and styling
-- `script.js` - Add custom functionality
+- **Hero Section** - Syed Hasan Naqvi, AI Data Engineer at Creditsafe
+- **About** - 4+ years experience, MSc from University of Glasgow
+- **Projects** - 4 industry projects with real technologies and achievements
+- **Skills** - 15+ technical skills organized by category
+- **Contact** - LinkedIn and GitHub profiles
 
-## Features
+## Technologies Featured
 
-- **Hero Section** - Your name, title, and key stats
-- **About** - Your experience and background
-- **Projects** - Industry projects with technologies used
-- **Skills** - Technical expertise with progress bars
-- **Contact** - Simple form to get in touch
+- **AI/ML**: Python, TensorFlow, Scikit-learn, GenAI, LangChain
+- **Big Data**: Apache Spark, Snowflake, AWS, Azure
+- **Tools**: dbt, Airflow, MLflow, Docker, Kubernetes
+- **Architecture**: Data Vault, Lakehouse, Microservices
+
+## Ready to Deploy
+
+Everything is pre-configured with your real information:
+- ✅ Name: Syed Hasan Naqvi
+- ✅ Title: AI Data Engineer
+- ✅ Company: Creditsafe
+- ✅ Education: MSc Computer Science, University of Glasgow
+- ✅ Location: United Kingdom
+- ✅ LinkedIn: linkedin.com/in/s-hasanhaider
+- ✅ GitHub: github.com/hasan-haider
 
 ---
 

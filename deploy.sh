@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Deploying AI Data Engineer Portfolio to GitHub Pages..."
+echo "🚀 Deploying Syed Hasan Naqvi's AI Data Engineer Portfolio to GitHub Pages..."
 
 # Check if git is installed
 if ! command -v git &> /dev/null; then
@@ -18,14 +18,14 @@ fi
 git add .
 
 # Commit changes
-git commit -m "Deploy AI Data Engineer Portfolio" 2>/dev/null || git commit -m "Update portfolio"
+git commit -m "Deploy Syed Hasan Naqvi's AI Data Engineer Portfolio" 2>/dev/null || git commit -m "Update portfolio"
 
 # Set branch to main
 git branch -M main
 
 # Add remote if not exists
 if ! git remote get-url origin &> /dev/null; then
-    echo "📝 Please enter your GitHub repository URL (e.g., https://github.com/username/repo.git):"
+    echo "📝 Please enter your GitHub repository URL (e.g., https://github.com/hasan-haider/portfolio-site.git):"
     read repo_url
     git remote add origin "$repo_url"
 fi
@@ -42,4 +42,4 @@ echo "   3. Select 'Deploy from a branch'"
 echo "   4. Choose 'main' branch and '/' folder"
 echo "   5. Save and wait 5-10 minutes"
 echo ""
-echo "🎉 Your portfolio will be live at: https://username.github.io/repo-name"
+echo "🎉 Your portfolio will be live at: https://hasan-haider.github.io/portfolio-site"

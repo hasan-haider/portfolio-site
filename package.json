@@ -1,7 +1,7 @@
 {
-  "name": "ai-data-engineer-portfolio",
+  "name": "syed-hasan-naqvi-portfolio",
   "version": "1.0.0",
-  "description": "Clean, fast AI Data Engineer portfolio website",
+  "description": "AI Data Engineer Portfolio - Syed Hasan Naqvi",
   "main": "index.html",
   "scripts": {
     "start": "python3 -m http.server 8000",
@@ -9,13 +9,22 @@
   },
   "keywords": [
     "portfolio",
-    "ai",
-    "data-engineer",
+    "ai-data-engineer",
     "machine-learning",
     "python",
-    "spark"
+    "apache-spark",
+    "aws",
+    "azure",
+    "snowflake",
+    "creditsafe",
+    "kipial",
+    "tcs"
   ],
   "author": "Syed Hasan Naqvi",
   "license": "MIT",
-  "homepage": "https://hasan-haider.github.io/ai-data-engineer-portfolio"
+  "homepage": "https://hasan-haider.github.io/portfolio-site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hasan-haider/portfolio-site.git"
+  }
 }
