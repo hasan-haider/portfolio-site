@@ -31,6 +31,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Show More Projects Functionality
+const showMoreProjectsBtn = document.getElementById('showMoreProjects');
+const hiddenProjects = document.querySelectorAll('.project-hidden');
+
+if (showMoreProjectsBtn) {
+    showMoreProjectsBtn.addEventListener('click', () => {
+        hiddenProjects.forEach(project => {
+            project.classList.remove('project-hidden');
+        });
+        showMoreProjectsBtn.style.display = 'none';
+    });
+}
+
+// Show More Skills Functionality
+const showMoreSkillsBtn = document.getElementById('showMoreSkills');
+const hiddenSkills = document.querySelectorAll('.skill-hidden');
+
+if (showMoreSkillsBtn) {
+    showMoreSkillsBtn.addEventListener('click', () => {
+        hiddenSkills.forEach(skill => {
+            skill.classList.remove('skill-hidden');
+        });
+        showMoreSkillsBtn.style.display = 'none';
+    });
+}
+
 // Contact Form Handling
 const contactForm = document.querySelector('.contact-form form');
 const submitButton = contactForm.querySelector('button[type="submit"]');
