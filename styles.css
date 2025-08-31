@@ -230,9 +230,41 @@ section h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
+}
+
+/* Desktop: 3 columns, show 6 cards */
+@media (min-width: 1025px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .project-card:nth-child(n+7) {
+        display: none;
+    }
+}
+
+/* Tablet: 2 columns, show 4 cards */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-card:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Mobile: 1 column, show 2 cards */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card:nth-child(n+3) {
+        display: none;
+    }
 }
 
 .project-card {
@@ -289,11 +321,6 @@ section h2 {
     font-weight: 500;
 }
 
-/* Hidden project cards */
-.project-hidden {
-    display: none;
-}
-
 /* Show More Button */
 .show-more-container {
     text-align: center;
@@ -338,9 +365,41 @@ section h2 {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
+}
+
+/* Desktop: 3 columns, show 6 skill categories */
+@media (min-width: 1025px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .skill-category:nth-child(n+7) {
+        display: none;
+    }
+}
+
+/* Tablet: 2 columns, show 4 skill categories */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-category:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Mobile: 1 column, show 4 skill categories */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-category:nth-child(n+5) {
+        display: none;
+    }
 }
 
 .skill-category {
@@ -581,16 +640,6 @@ section h2 {
         grid-template-columns: 1fr;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
     .project-card {
         padding: 25px;
     }

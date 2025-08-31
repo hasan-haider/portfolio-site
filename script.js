@@ -33,12 +33,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Show More Projects Functionality
 const showMoreProjectsBtn = document.getElementById('showMoreProjects');
-const hiddenProjects = document.querySelectorAll('.project-hidden');
+const projectCards = document.querySelectorAll('.project-card');
 
 if (showMoreProjectsBtn) {
     showMoreProjectsBtn.addEventListener('click', () => {
-        hiddenProjects.forEach(project => {
-            project.classList.remove('project-hidden');
+        // Show all project cards by removing the CSS rule that hides them
+        projectCards.forEach(card => {
+            card.style.display = 'block';
         });
         showMoreProjectsBtn.style.display = 'none';
     });
@@ -46,10 +47,16 @@ if (showMoreProjectsBtn) {
 
 // Show More Skills Functionality
 const showMoreSkillsBtn = document.getElementById('showMoreSkills');
+const skillCategories = document.querySelectorAll('.skill-category');
 const hiddenSkills = document.querySelectorAll('.skill-hidden');
 
 if (showMoreSkillsBtn) {
     showMoreSkillsBtn.addEventListener('click', () => {
+        // Show all skill categories
+        skillCategories.forEach(category => {
+            category.style.display = 'block';
+        });
+        // Show all hidden skills within categories
         hiddenSkills.forEach(skill => {
             skill.classList.remove('skill-hidden');
         });
