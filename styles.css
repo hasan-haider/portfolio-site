@@ -504,9 +504,8 @@ section h2 {
     height: 100%;
     background: linear-gradient(90deg, var(--primary-color), #3b82f6);
     border-radius: 4px;
-    transition: width 1.5s ease;
     position: relative;
-    width: 0; /* Start at 0 width */
+    /* Remove width: 0 and transition to make them work immediately */
 }
 
 .skill-progress::after {

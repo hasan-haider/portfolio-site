@@ -31,43 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animate progress bars when they come into view
-const animateProgressBars = () => {
-    const progressBars = document.querySelectorAll('.skill-progress');
-    
-    progressBars.forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-        
-        if (isVisible && !bar.classList.contains('animated')) {
-            // Get the target width from the inline style attribute
-            const targetWidth = bar.getAttribute('style')?.match(/width:\s*(\d+%)/)?.[1] || '0%';
-            
-            // Animate to target width
-            setTimeout(() => {
-                bar.style.width = targetWidth;
-                bar.classList.add('animated');
-            }, 200);
-        }
-    });
-};
-
-// Initialize progress bars
-const initializeProgressBars = () => {
-    const progressBars = document.querySelectorAll('.skill-progress');
-    progressBars.forEach(bar => {
-        // Ensure all bars start at 0 width
-        bar.style.width = '0%';
-    });
-    
-    // Trigger animation after a short delay
-    setTimeout(animateProgressBars, 500);
-};
-
-// Call on page load and scroll
-window.addEventListener('load', initializeProgressBars);
-window.addEventListener('scroll', animateProgressBars);
-
 // Show More Projects Functionality
 const showMoreProjectsBtn = document.getElementById('showMoreProjects');
 const projectCards = document.querySelectorAll('.project-card');
@@ -98,8 +61,6 @@ if (showMoreSkillsBtn) {
             skill.classList.remove('skill-hidden');
         });
         showMoreSkillsBtn.style.display = 'none';
-        // Re-animate progress bars for newly shown skills
-        setTimeout(animateProgressBars, 100);
     });
 }
 
